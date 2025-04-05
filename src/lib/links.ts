@@ -1,47 +1,27 @@
 import {
   getChatsPageRoute,
-  getEquipmentPageRoute,
-  getInvestorsPageRoute,
-  getLandsPageRoute,
   getProfilePageRoute,
   getProjectsPageRoute,
-  getRoomsPageRoute,
+  getResourcesPageRoute,
   getSettingsPageRoute,
-  getSpecialistsPageRoute,
 } from './routes'
 
 export const links = [
   {
-    to: getProjectsPageRoute(),
-    textInLink: 'Проекты',
-  },
-  {
     to: getProfilePageRoute(),
     textInLink: 'Профиль',
+  },
+  {
+    to: getProjectsPageRoute(),
+    textInLink: 'Проекты',
   },
   {
     to: getChatsPageRoute(),
     textInLink: 'Чаты',
   },
   {
-    to: getSpecialistsPageRoute(),
-    textInLink: 'Специалисты',
-  },
-  {
-    to: getInvestorsPageRoute(),
-    textInLink: 'Инвесторы',
-  },
-  {
-    to: getEquipmentPageRoute(),
-    textInLink: 'Оборудование',
-  },
-  {
-    to: getRoomsPageRoute(),
-    textInLink: 'Помещения',
-  },
-  {
-    to: getLandsPageRoute(),
-    textInLink: 'Участки',
+    to: getResourcesPageRoute(),
+    textInLink: 'Ресурсы',
   },
   {
     to: getSettingsPageRoute(),
