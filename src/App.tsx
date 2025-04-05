@@ -26,7 +26,6 @@ import { Settings } from './pages/Settings'
 
 export default function App() {
   const location = useLocation()
-
   return (
     <Routes location={location} key={location.pathname}>
       <Route element={<Layout />}>

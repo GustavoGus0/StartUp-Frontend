@@ -22,7 +22,7 @@ export const links = [
   {
     to: getProjectsPageRoute(),
     textInLink: 'Проекты',
-    icon: null,
+    icon: icons.projects(),
   },
   {
     to: getChatsPageRoute(),
