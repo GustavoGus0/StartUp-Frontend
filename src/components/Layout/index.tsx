@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import { useEffect } from 'react'
 import { Link, Outlet, useLocation } from 'react-router'
 
-import { icons } from '../../assets/icons'
 import { useOnceAnimation } from '../../hooks/useOnceAnimation'
 import { animateSlideDown, animateSlideToRight } from '../../lib/animations'
 import { links } from '../../lib/links'
@@ -22,7 +21,7 @@ export const Layout = () => {
     handleReloadPage()
 
     return () => removeListener
-  }, [needAnimation])
+  }, [])
 
   return (
     <div className={css.mainContainer}>

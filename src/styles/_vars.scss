@@ -14,18 +14,22 @@ $mainHeaderFontWeight: bold;
 $menuHeaderWidth: 20%;
 $menuHeaderMaxWidth: 250px;
 $menuItemsGap: 0.5rem;
+
+// LINKS
 $linkPadding: 0.5rem;
 $linkFontSize: 1rem;
 $linkBorderRadius: 0.5em;
-$linkBackgroundColorLT: rgb(235 235 235);
-$linkHoverBackgroundColorLT: rgb(220 220 220);
+$linkBackgroundColorLT: rgb(255 255 255);
+$linkHoverBackgroundColorLT: rgb(235 235 235);
 $linkTextColorLT: rgb(0 0 0);
+$resourcesLinksGap: 1rem;
 
 // MAIN CONTENT
 $mainContentWidth: 100%;
 $segmentMarginTop: 1rem;
-$resourcesLinksGap: 1rem;
 
+// BUTTONS
 $backButtonSize: 2.5em;
 
+// ICONS
 $iconsLightGrayLT: rgb(180 180 180);
