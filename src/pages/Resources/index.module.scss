@@ -1,4 +1,5 @@
 @use '../../styles/vars' as *;
+@use '../../styles/mixins' as *;
 
 .list {
   display: flex;
@@ -14,13 +15,7 @@
       width: 100%;
       height: 100%;
       padding: 1rem;
-      background-color: $linkBackgroundColorLT;
-      color: $linkTextColorLT;
-      border-radius: $linkBorderRadius;
-
-      &:hover {
-        background-color: $linkHoverBackgroundColorLT;
-      }
+      @include linkHover;
     }
   }
 }

@@ -1,0 +1,13 @@
+@use './vars' as *;
+
+@mixin linkHover {
+  background-color: $linkBackgroundColorLT;
+  color: $linkTextColorLT;
+  border-radius: $linkBorderRadius;
+  transition: $linkDefaultTransition;
+
+  &:hover {
+    background-color: $linkHoverBackgroundColorLT;
+    scale: 1.05;
+  }
+}

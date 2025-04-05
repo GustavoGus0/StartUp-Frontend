@@ -5,7 +5,7 @@ $textColorLT: rgb(0 0 0);
 $defaultFontSize: 16px;
 $defaultFontFamily: 'Onest', 'Arial', sans-serif;
 $browserPageWidth: 60%;
-$menuToMainContentGap: 1rem;
+$menuToMainContentGap: 2rem;
 $marginFromTopOfPage: 4rem;
 
 // HEADER
@@ -21,12 +21,14 @@ $linkFontSize: 1rem;
 $linkBorderRadius: 0.5em;
 $linkBackgroundColorLT: rgb(255 255 255);
 $linkHoverBackgroundColorLT: rgb(235 235 235);
+$linkHoverScale: 1.05;
 $linkTextColorLT: rgb(0 0 0);
-$resourcesLinksGap: 1rem;
+$linkDefaultTransition: 0.1s ease-in-out;
 
 // MAIN CONTENT
 $mainContentWidth: 100%;
 $segmentMarginTop: 1rem;
+$resourcesLinksGap: 1rem;
 
 // BUTTONS
 $backButtonSize: 2.5em;
