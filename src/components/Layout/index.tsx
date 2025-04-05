@@ -1,4 +1,5 @@
-import { Link, Outlet } from 'react-router'
+import cn from 'classnames'
+import { Link, Outlet, useLocation } from 'react-router'
 
 import { links } from '../../lib/links'
 
@@ -23,11 +24,18 @@ export const Layout = () => {
 }
 
 const Menu = () => {
+  const location = useLocation()
+
   return (
     <ul className={css.menuList}>
       {links.map((el) => (
         <li key={el.textInLink} className={css.listItem}>
-          <Link to={el.to}>{el.textInLink}</Link>
+          <Link
+            className={cn({ [css.link]: true, [css.active]: location.pathname === el.to })}
+            to={el.to}
+          >
+            {el.textInLink}
+          </Link>
         </li>
       ))}
     </ul>

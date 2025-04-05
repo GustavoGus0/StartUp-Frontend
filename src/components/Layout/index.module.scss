@@ -22,11 +22,43 @@
       width: 100%;
       height: auto;
       margin-top: $segmentMarginTop;
+
+      .menuList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: $menuItemsGap;
+
+        .listItem {
+          width: 100%;
+          min-height: 1rem;
+          display: flex;
+          justify-content: center;
+
+          .link {
+            width: 100%;
+            height: 100%;
+            padding: $linkPadding;
+            font-size: $linkFontSize;
+            background-color: $linkBackgroundColorLT;
+            color: $linkTextColorLT;
+            border-radius: $linkBorderRadius;
+          }
+
+          .active {
+            background-color: $linkHoverBackgroundColorLT;
+          }
+        }
+      }
     }
   }
 
   .main {
     margin-top: $marginFromTopOfPage;
     width: $mainContentWidth;
+
+    .content {
+      width: 100%;
+    }
   }
 }

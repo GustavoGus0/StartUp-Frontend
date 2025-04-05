@@ -1,6 +1,7 @@
+// LT = Light Theme | DT = Dark Theme
 // BASIC VARIABLES
-$lightThemePageBackground: rgb(255 255 255);
-$lightThemeTextColor: rgb(0 0 0);
+$pageBackgroundLT: rgb(255 255 255);
+$textColorLT: rgb(0 0 0);
 $defaultFontSize: 16px;
 $defaultFontFamily: 'Onest', 'Arial', sans-serif;
 $browserPageWidth: 60%;
@@ -10,7 +11,14 @@ $marginFromTopOfPage: 4rem;
 // HEADER
 $mainHeaderFontSize: 2.25rem;
 $mainHeaderFontWeight: bold;
-$menuHeaderWidth: 25%;
+$menuHeaderWidth: 20%;
+$menuItemsGap: 0.5rem;
+$linkPadding: 0.5rem;
+$linkFontSize: 1rem;
+$linkBorderRadius: 0.5em;
+$linkBackgroundColorLT: rgb(235 235 235);
+$linkHoverBackgroundColorLT: rgb(220 220 220);
+$linkTextColorLT: rgb(0 0 0);
 
 // MAIN CONTENT
 $mainContentWidth: 100%;
