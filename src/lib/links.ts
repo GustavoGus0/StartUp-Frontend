@@ -1,3 +1,5 @@
+import { icons } from '../assets/icons'
+
 import {
   getChatsPageRoute,
   getEquipmentPageRoute,
@@ -15,22 +17,27 @@ export const links = [
   {
     to: getProfilePageRoute(),
     textInLink: 'Профиль',
+    icon: icons.profile(),
   },
   {
     to: getProjectsPageRoute(),
     textInLink: 'Проекты',
+    icon: null,
   },
   {
     to: getChatsPageRoute(),
     textInLink: 'Чаты',
+    icon: icons.messages(),
   },
   {
     to: getResourcesPageRoute(),
     textInLink: 'Ресурсы',
+    icon: icons.resources(),
   },
   {
     to: getSettingsPageRoute(),
     textInLink: 'Настройки',
+    icon: icons.settings(),
   },
 ]
 

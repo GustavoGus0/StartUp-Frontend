@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { useEffect } from 'react'
 import { Link, Outlet, useLocation } from 'react-router'
 
+import { icons } from '../../assets/icons'
 import { useOnceAnimation } from '../../hooks/useOnceAnimation'
 import { animateSlideDown, animateSlideToRight } from '../../lib/animations'
 import { links } from '../../lib/links'
@@ -77,7 +78,8 @@ const Menu = () => {
             className={cn({ [css.link]: true, [css.active]: location.pathname === el.to })}
             to={el.to}
           >
-            {el.textInLink}
+            <div className={css.icon}>{el.icon}</div>
+            <p>{el.textInLink}</p>
           </Link>
         </motion.li>
       ))}
