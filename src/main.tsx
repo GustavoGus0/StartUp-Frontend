@@ -5,6 +5,9 @@ import { BrowserRouter as Router } from 'react-router'
 
 import App from './App.tsx'
 
+import './styles/_vars.scss'
+import './styles/global.scss'
+
 const queryClient = new QueryClient()
 
 createRoot(document.getElementById('root')!).render(
