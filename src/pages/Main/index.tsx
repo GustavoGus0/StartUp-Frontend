@@ -1,9 +1,9 @@
 import { Segment } from '../../components/Segment'
 
-export const Main = () => {
+export const Profile = () => {
   return (
-    <Segment title="Main">
-      <div>Main Page</div>
+    <Segment title="Profile">
+      <div>Profile Page</div>
     </Segment>
   )
 }

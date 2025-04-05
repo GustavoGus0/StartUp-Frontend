@@ -1,4 +1,6 @@
-import { Outlet } from 'react-router'
+import { Link, Outlet } from 'react-router'
+
+import { links } from '../../lib/links'
 
 import css from './index.module.scss'
 
@@ -23,10 +25,11 @@ export const Layout = () => {
 const Menu = () => {
   return (
     <ul className={css.menuList}>
-      <li className={css.listItem}>List Item 1</li>
-      <li className={css.listItem}>List Item 2</li>
-      <li className={css.listItem}>List Item 3</li>
-      <li className={css.listItem}>List Item 4</li>
+      {links.map((el) => (
+        <li key={el.textInLink} className={css.listItem}>
+          <Link to={el.to}>{el.textInLink}</Link>
+        </li>
+      ))}
     </ul>
   )
 }
