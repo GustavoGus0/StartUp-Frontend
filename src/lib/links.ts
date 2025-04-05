@@ -1,9 +1,14 @@
 import {
   getChatsPageRoute,
+  getEquipmentPageRoute,
+  getInvestorsPageRoute,
+  getLandsPageRoute,
   getProfilePageRoute,
   getProjectsPageRoute,
   getResourcesPageRoute,
+  getRoomsPageRoute,
   getSettingsPageRoute,
+  getSpecialistsPageRoute,
 } from './routes'
 
 export const links = [
@@ -26,5 +31,28 @@ export const links = [
   {
     to: getSettingsPageRoute(),
     textInLink: 'Настройки',
+  },
+]
+
+export const resourcesLinks = [
+  {
+    to: getSpecialistsPageRoute(),
+    textInLink: 'Специалисты',
+  },
+  {
+    to: getInvestorsPageRoute(),
+    textInLink: 'Инвесторы',
+  },
+  {
+    to: getEquipmentPageRoute(),
+    textInLink: 'Оборудование',
+  },
+  {
+    to: getRoomsPageRoute(),
+    textInLink: 'Помещения',
+  },
+  {
+    to: getLandsPageRoute(),
+    textInLink: 'Территория',
   },
 ]

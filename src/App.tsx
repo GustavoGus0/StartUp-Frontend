@@ -14,15 +14,15 @@ import {
   getSpecialistsPageRoute,
 } from './lib/routes'
 import { Chats } from './pages/Chats'
-import { Equipment } from './pages/Equipment'
-import { Investors } from './pages/Investors'
-import { Lands } from './pages/Lands'
 import { Profile } from './pages/Main'
 import { Projects } from './pages/Projects'
 import { Resources } from './pages/Resources'
-import { Rooms } from './pages/Rooms'
+import { Equipment } from './pages/Resources/Equipment'
+import { Investors } from './pages/Resources/Investors'
+import { Lands } from './pages/Resources/Lands'
+import { Rooms } from './pages/Resources/Rooms'
+import { Specialists } from './pages/Resources/Specialists'
 import { Settings } from './pages/Settings'
-import { Specialists } from './pages/Specialists'
 
 export default function App() {
   const location = useLocation()

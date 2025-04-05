@@ -1,6 +1,7 @@
 export const getProjectsPageRoute = () => '/'
 export const getProfilePageRoute = () => '/profile'
 export const getChatsPageRoute = () => '/messages'
+export const getResourcesPageRoute = () => '/resources'
 export const getSpecialistsPageRoute = () => '/specialists'
 export const getInvestorsPageRoute = () => '/investors'
 export const getEquipmentPageRoute = () => '/equipment'

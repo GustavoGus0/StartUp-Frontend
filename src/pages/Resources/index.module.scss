@@ -1,0 +1,26 @@
+@use '../../styles/vars' as *;
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: $resourcesLinksGap;
+
+  .listItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .reactLink {
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      background-color: $linkBackgroundColorLT;
+      color: $linkTextColorLT;
+      border-radius: $linkBorderRadius;
+
+      &:hover {
+        background-color: $linkHoverBackgroundColorLT;
+      }
+    }
+  }
+}

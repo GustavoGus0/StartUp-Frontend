@@ -11,6 +11,7 @@
   .header {
     margin-top: $marginFromTopOfPage;
     width: $menuHeaderWidth;
+    max-width: $menuHeaderMaxWidth;
     text-wrap: nowrap;
 
     .headerText {
@@ -43,6 +44,10 @@
             background-color: $linkBackgroundColorLT;
             color: $linkTextColorLT;
             border-radius: $linkBorderRadius;
+          }
+
+          .link:hover {
+            background-color: $linkHoverBackgroundColorLT;
           }
 
           .active {

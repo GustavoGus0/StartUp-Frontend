@@ -6,6 +6,31 @@
   display: flex;
   flex-direction: column;
 
+  .segmentHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .backButton {
+      height: $backButtonSize;
+      width: $backButtonSize;
+      display: block;
+      transition: 0.1s linear scale;
+
+      &:hover {
+        scale: 1.1;
+      }
+
+      &:active {
+        scale: 0.95;
+      }
+
+      svg {
+        fill: rgb(0 0 0);
+      }
+    }
+  }
+
   .header {
     font-size: $mainHeaderFontSize;
   }

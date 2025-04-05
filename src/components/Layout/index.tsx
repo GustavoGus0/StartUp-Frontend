@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { Link, Outlet, useLocation } from 'react-router'
 
 import { useOnceAnimation } from '../../hooks/useOnceAnimation'
-import { animateSlideToRight } from '../../lib/animations'
+import { animateSlideDown, animateSlideToRight } from '../../lib/animations'
 import { links } from '../../lib/links'
 import { ScaleOut } from '../Animation'
 
@@ -62,7 +62,7 @@ const Menu = () => {
     return () => removeListener
   }, [])
 
-  const { initial, animate, transition } = animateSlideToRight()
+  const { initial, animate, transition } = animateSlideDown()
   return (
     <ul className={css.menuList}>
       {links.map((el, i) => (
