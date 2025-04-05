@@ -21,7 +21,10 @@ export const Resources = () => {
             key={el.textInLink}
           >
             <Link className={css.reactLink} to={el.to}>
-              {el.textInLink}
+              <div className={css.icon}>{el.icon}</div>
+              <Segment title={el.textInLink} size={2}>
+                <p className={css.description}>{el.description}</p>
+              </Segment>
             </Link>
           </motion.li>
         ))}

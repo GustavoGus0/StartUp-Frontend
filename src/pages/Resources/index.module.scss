@@ -3,19 +3,41 @@
 
 .list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-start;
   gap: $resourcesLinksGap;
+  width: 100%;
 
   .listItem {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
     .reactLink {
       width: 100%;
       height: 100%;
-      padding: 1rem;
-      @include linkHover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: $basicBarPadding;
+      gap: $linkResourcesIconToTextGap;
+      @include linkHover(1.02);
+
+      .description {
+        color: $linkResourcesDescriptionTextColor;
+      }
+
+      .icon {
+        width: $linkResourcesIconSize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          fill: $iconsLightGrayLT;
+        }
+      }
     }
   }
 }

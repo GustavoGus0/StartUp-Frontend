@@ -4,7 +4,6 @@ import {
   getChatsPageRoute,
   getEquipmentPageRoute,
   getInvestorsPageRoute,
-  getLandsPageRoute,
   getProfilePageRoute,
   getProjectsPageRoute,
   getResourcesPageRoute,
@@ -45,21 +44,25 @@ export const resourcesLinks = [
   {
     to: getSpecialistsPageRoute(),
     textInLink: 'Специалисты',
+    icon: icons.specialists(),
+    description: 'Надежные специалисты для продвижения вашего стартапа',
   },
   {
     to: getInvestorsPageRoute(),
     textInLink: 'Инвесторы',
+    icon: icons.investors(),
+    description: 'Когда нужны инвесторы для стартапа',
   },
   {
     to: getEquipmentPageRoute(),
     textInLink: 'Оборудование',
+    icon: icons.equipment(),
+    description: 'Выберите оборудование для закупки или в аренду',
   },
   {
     to: getRoomsPageRoute(),
-    textInLink: 'Помещения',
-  },
-  {
-    to: getLandsPageRoute(),
-    textInLink: 'Территория',
+    textInLink: 'Помещения и территория',
+    icon: icons.rooms(),
+    description: 'Можно найти территорию или помещение для выкупа или в аренду',
   },
 ]

@@ -10,6 +10,7 @@ $marginFromTopOfPage: 4rem;
 
 // HEADER
 $mainHeaderFontSize: 2.25rem;
+$smallSegmentHeaderFontSize: 1.35rem;
 $mainHeaderFontWeight: bold;
 $menuHeaderWidth: 20%;
 $menuHeaderMaxWidth: 250px;
@@ -24,11 +25,16 @@ $linkHoverBackgroundColorLT: rgb(235 235 235);
 $linkHoverScale: 1.05;
 $linkTextColorLT: rgb(0 0 0);
 $linkDefaultTransition: 0.1s ease-in-out;
+$linkResourcesIconSize: 4rem;
+$linkResourcesIconToTextGap: 0.75rem;
+$linkResourcesDescriptionTextColor: rgb(150 150 150);
 
 // MAIN CONTENT
 $mainContentWidth: 100%;
 $segmentMarginTop: 1rem;
+$segmentSmallMarginTop: 0.35rem;
 $resourcesLinksGap: 1rem;
+$basicBarPadding: 1rem;
 
 // BUTTONS
 $backButtonSize: 2.5em;

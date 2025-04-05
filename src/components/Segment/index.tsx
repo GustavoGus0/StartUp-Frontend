@@ -25,7 +25,7 @@ export const Segment = ({ title, returnToResources, size = 1, children }: ISegme
           (size === 1 ? (
             <h1 className={css.header}>{title}</h1>
           ) : (
-            <h2 className={css.header}>{title}</h2>
+            <h2 className={css.smallerHeader}>{title}</h2>
           ))}
       </div>
       <div className={css.content}>{children}</div>

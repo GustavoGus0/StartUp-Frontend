@@ -35,9 +35,13 @@
     font-size: $mainHeaderFontSize;
   }
 
+  .smallerHeader {
+    font-size: $smallSegmentHeaderFontSize;
+  }
+
   .content {
     width: 100%;
     height: auto;
-    margin-top: $segmentMarginTop;
+    margin-top: $segmentSmallMarginTop;
   }
 }
