@@ -11,7 +11,8 @@
     "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache",
     "stylelint": "stylelint --cache --cache-location ./node_modules/.cache/.stylelintcache \"**/*.scss\"",
     "stylecheck": "sass --update -q ./src:./node_modules/.cache/.stylecheckcache",
-    "prettify": "prettier --log-level=warn --cache --write '{src/**/*,*}.{ts,tsx,js,json,yml,scss}' !**/{node_modules,dist}/**/*"
+    "prettify": "prettier --log-level=warn --cache --write '{src/**/*,*}.{ts,tsx,js,json,yml,scss}' !**/{node_modules,dist}/**/*",
+    "precommit": "pnpm prettify && pnpm lint && pnpm types && pnpm stylelint && pnpm stylecheck"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.71.10",
