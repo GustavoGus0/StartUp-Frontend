@@ -5,7 +5,9 @@ import { Link, Outlet, useLocation } from 'react-router'
 
 import { useOnceAnimation } from '../../hooks/useOnceAnimation'
 import { animateSlideDown, animateSlideToRight } from '../../lib/animations'
+import { IMe, useMe } from '../../lib/ctx'
 import { links } from '../../lib/links'
+import { ILink } from '../../lib/links'
 import { ScaleOut } from '../Animation'
 
 import css from './index.module.scss'
@@ -50,6 +52,7 @@ export const Layout = () => {
 
 const Menu = () => {
   const location = useLocation()
+  const me = useMe()
 
   const { needAnimation, setElementAnimated, handleReloadPage, removeListener } =
     useOnceAnimation('menu-animated')
@@ -62,10 +65,18 @@ const Menu = () => {
     return () => removeListener
   }, [])
 
+  const filterLinksIfAuth = <T extends ILink>(arr: T[], me?: IMe) => {
+    if (me) {
+      return arr.filter((el) => el.forAuth)
+    } else {
+      return arr.filter((el) => !el.forAuth || el.canSeeNotAuth)
+    }
+  }
+
   const { initial, animate, transition } = animateSlideDown()
   return (
     <ul className={css.menuList}>
-      {links.map((el, i) => (
+      {filterLinksIfAuth(links, me).map((el, i) => (
         <motion.li
           initial={needAnimation ? initial : {}}
           animate={animate}
@@ -74,7 +85,11 @@ const Menu = () => {
           className={css.listItem}
         >
           <Link
-            className={cn({ [css.link]: true, [css.active]: location.pathname === el.to })}
+            className={cn({
+              [css.link]: true,
+              [css.active]: location.pathname === el.to && el.color !== 'red',
+              [css.redLink]: el.color === 'red',
+            })}
             to={el.to}
           >
             <div className={css.icon}>{el.icon}</div>

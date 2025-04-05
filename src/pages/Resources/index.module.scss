@@ -22,7 +22,7 @@
       justify-content: center;
       padding: $basicBarPadding;
       gap: $linkResourcesIconToTextGap;
-      @include linkHover(1.02);
+      @include link(1.02);
 
       .description {
         color: $linkResourcesDescriptionTextColor;

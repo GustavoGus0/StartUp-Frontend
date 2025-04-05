@@ -1,7 +1,7 @@
 import { Segment } from '../../components/Segment'
 import { useMe } from '../../lib/ctx'
 
-export const Settings = () => {
+export const Notifications = () => {
   const me = useMe()
   if (!me) {
     return (
@@ -10,10 +10,9 @@ export const Settings = () => {
       </Segment>
     )
   }
-
   return (
-    <Segment title="Настройки">
-      <div>Настройки</div>
+    <Segment title="Уведомления">
+      <div>Уведомления</div>
     </Segment>
   )
 }

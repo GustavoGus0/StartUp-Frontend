@@ -1,18 +1,20 @@
 import { Segment } from '../../../components/Segment'
 import { useMe } from '../../../lib/ctx'
 
-export const Equipment = () => {
+export const SignIn = () => {
   const me = useMe()
-  if (!me) {
+
+  if (me) {
     return (
-      <Segment color="red" title="Unauthorized">
+      <Segment color="red" title={'Error'}>
         <p>You have no access to this page</p>
       </Segment>
     )
   }
+
   return (
-    <Segment returnToResources={true} title="Оборудование">
-      <div>Оборудование</div>
+    <Segment title="Вход">
+      <p>Вход</p>
     </Segment>
   )
 }

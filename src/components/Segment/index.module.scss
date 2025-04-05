@@ -39,9 +39,20 @@
     font-size: $smallSegmentHeaderFontSize;
   }
 
+  .red {
+    color: $redTextColor;
+  }
+
   .content {
     width: 100%;
     height: auto;
     margin-top: $segmentSmallMarginTop;
+  }
+
+  .redContent {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: $redBackground;
+    color: $redTextColor;
   }
 }

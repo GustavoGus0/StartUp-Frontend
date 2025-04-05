@@ -1,6 +1,6 @@
 @use './vars' as *;
 
-@mixin linkHover($scaleValue: $linkHoverScale) {
+@mixin link($scaleValue: $linkHoverScale) {
   background-color: $linkBackgroundColorLT;
   color: $linkTextColorLT;
   border-radius: $linkBorderRadius;
