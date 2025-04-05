@@ -17,6 +17,12 @@
       font-size: $mainHeaderFontSize;
       font-weight: $mainHeaderFontWeight;
     }
+
+    .navbar {
+      width: 100%;
+      height: auto;
+      margin-top: $segmentMarginTop;
+    }
   }
 
   .main {

@@ -1,3 +1,9 @@
+import { Segment } from '../../components/Segment'
+
 export const Main = () => {
-  return <div>Main Page</div>
+  return (
+    <Segment title="Main">
+      <div>Main Page</div>
+    </Segment>
+  )
 }

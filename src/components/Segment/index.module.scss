@@ -1,0 +1,18 @@
+@use '../../styles/vars' as *;
+
+.segment {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    font-size: $mainHeaderFontSize;
+  }
+
+  .content {
+    width: 100%;
+    height: auto;
+    margin-top: $segmentMarginTop;
+  }
+}
