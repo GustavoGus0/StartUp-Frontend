@@ -1,0 +1,19 @@
+@use '../../styles/mixins' as *;
+
+.link {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  @include link;
+
+  .icon {
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+  }
+}

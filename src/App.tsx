@@ -15,6 +15,7 @@ import {
 } from './lib/routes'
 import { Chats } from './pages/Chats'
 import { Profile } from './pages/Main'
+import { NotFound } from './pages/NotFound'
 import { Projects } from './pages/Projects'
 import { Resources } from './pages/Resources'
 import { Equipment } from './pages/Resources/Equipment'
@@ -39,6 +40,7 @@ export default function App() {
         <Route path={getRoomsPageRoute()} element={<Rooms />} />
         <Route path={getLandsPageRoute()} element={<Lands />} />
         <Route path={getSettingsPageRoute()} element={<Settings />} />
+        <Route path={'*'} element={<NotFound />} />
       </Route>
     </Routes>
   )
