@@ -16,9 +16,9 @@ interface IInput {
 
 export const Input = ({ formik, name, labelText, needEye = false, errorMessage }: IInput) => {
   const [type, setType] = useState<'text' | 'password'>(needEye ? 'password' : 'text')
-  const value = formik.values[name]
   const error = errorMessage || (formik.errors[name] as string | undefined)
-  const invalid = !!error && value !== ''
+  const touched = formik.touched[name]
+  const invalid = !!error && !!touched
 
   return (
     <div className={css.inputBox}>
