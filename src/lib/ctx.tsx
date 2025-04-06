@@ -1,16 +1,16 @@
 import { createContext, Dispatch, SetStateAction, useContext, useState } from 'react'
 
-import { IMe } from '../types'
+import { IStartuper } from '../types'
 
 export type AppContext = {
-  me?: IMe
-  setMe?: Dispatch<SetStateAction<IMe | undefined>>
+  me?: IStartuper
+  setMe?: Dispatch<SetStateAction<IStartuper | undefined>>
 }
 
 const AppReactContext = createContext<AppContext>({})
 
 export const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const [me, setMe] = useState<IMe | undefined>({
+  const [me, setMe] = useState<IStartuper | undefined>({
     id: 25,
     email: 'placeholder@mail.ru',
     role: 'startuper',
@@ -19,6 +19,7 @@ export const AppContextProvider = ({ children }: { children: React.ReactNode }) 
     patronymic: 'Петрович',
     description:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu.',
+    projects: null,
   })
   return (
     <AppReactContext.Provider value={{ me: me, setMe: setMe }}>{children}</AppReactContext.Provider>

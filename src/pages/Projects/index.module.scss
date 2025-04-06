@@ -1,0 +1,29 @@
+@use '../../styles/vars' as *;
+@use '../../styles/mixins' as *;
+
+.projects {
+  padding: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .listItem {
+    padding: $basicBarPadding;
+    border-radius: $linkBorderRadius;
+    transition: $linkDefaultTransition;
+
+    &:hover {
+      background-color: $linkHoverBackgroundColorLT;
+      scale: 1.03;
+    }
+
+    .reactLink {
+      @include link;
+
+      &:hover {
+        background-color: $linkHoverBackgroundColorLT;
+        scale: 1.1;
+      }
+    }
+  }
+}

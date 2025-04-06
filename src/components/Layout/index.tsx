@@ -8,7 +8,7 @@ import { animateSlideDown, animateSlideToRight } from '../../lib/animations'
 import { useMe } from '../../lib/ctx'
 import { links } from '../../lib/links'
 import { ILink } from '../../lib/links'
-import { IMe } from '../../types'
+import { IStartuper } from '../../types'
 import { ScaleOut } from '../Animation'
 
 import css from './index.module.scss'
@@ -66,7 +66,7 @@ const Menu = () => {
     return () => removeListener
   }, [])
 
-  const filterLinksIfAuth = <T extends ILink>(arr: T[], me?: IMe) => {
+  const filterLinksIfAuth = <T extends ILink>(arr: T[], me?: IStartuper) => {
     if (me) {
       return arr.filter((el) => el.forAuth)
     } else {
