@@ -2,6 +2,7 @@
 // BASIC VARIABLES
 $pageBackgroundLT: rgb(255 255 255);
 $textColorLT: rgb(0 0 0);
+$whiteText: rgb(255 255 255);
 $defaultFontSize: 16px;
 $defaultFontFamily: 'Onest', 'Arial', sans-serif;
 $browserPageWidth: 60%;
@@ -65,3 +66,9 @@ $authButtonHoverBackgroundColorLT: rgb(240 240 240);
 
 // ALERT COMPONENT
 $alertFontSize: 0.8rem;
+
+// PROFILE
+$profilePhotoMinWidth: 12rem;
+$profilePhotoToTextGap: 1rem;
+$profileNamingFontSize: 1.65rem;
+$profileRoleFontSize: 0.8rem;

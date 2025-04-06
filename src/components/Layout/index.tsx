@@ -5,9 +5,10 @@ import { Link, Outlet, useLocation } from 'react-router'
 
 import { useOnceAnimation } from '../../hooks/useOnceAnimation'
 import { animateSlideDown, animateSlideToRight } from '../../lib/animations'
-import { IMe, useMe } from '../../lib/ctx'
+import { useMe } from '../../lib/ctx'
 import { links } from '../../lib/links'
 import { ILink } from '../../lib/links'
+import { IMe } from '../../types'
 import { ScaleOut } from '../Animation'
 
 import css from './index.module.scss'

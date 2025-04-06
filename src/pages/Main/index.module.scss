@@ -1,0 +1,43 @@
+@use '../../styles/vars' as *;
+
+.preview {
+  display: flex;
+  gap: $profilePhotoToTextGap;
+  padding: 0.65rem;
+
+  .photo {
+    stroke-width: 1;
+    fill: transparent;
+    stroke: $iconsLightGrayLT;
+    width: $profilePhotoMinWidth;
+    float: left;
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 100%;
+
+    .header {
+      font-size: $profileNamingFontSize;
+    }
+
+    .role {
+      background-color: $accentColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      padding: 0.25rem 0.65rem;
+      border-radius: 1rem;
+      font-weight: bolder;
+      color: $whiteText;
+      font-size: $profileRoleFontSize;
+    }
+
+    .description {
+      margin-top: 0.5rem;
+    }
+  }
+}

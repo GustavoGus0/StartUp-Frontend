@@ -11,7 +11,7 @@
 
   .header {
     margin-top: $marginFromTopOfPage;
-    width: $menuHeaderWidth;
+    min-width: $menuHeaderWidth;
     max-width: $menuHeaderMaxWidth;
     text-wrap: nowrap;
 
