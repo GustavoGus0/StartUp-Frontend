@@ -7,6 +7,12 @@ export interface IProject {
   searchesFor: resourceType[] | []
 }
 
+export interface IChat {
+  id: string | number
+  user1Id: string | number
+  user2Id: string | number
+}
+
 export type roleType = 'startuper' | 'specialist' | 'investor'
 export type competenceType = 'wood' | 'metal' | 'IT' | 'cars' | 'aircrafts' | 'barman' | 'waiter'
 export type resourceType = 'specialists' | 'investors' | 'equipment' | 'rooms and lands'

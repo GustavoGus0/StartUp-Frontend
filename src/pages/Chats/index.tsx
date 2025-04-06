@@ -1,5 +1,8 @@
 import { Segment } from '../../components/Segment'
 import { useMe } from '../../lib/ctx'
+import { chats_data } from '../../lib/queryPlaceholder'
+
+import css from './index.module.scss'
 
 export const Chats = () => {
   const me = useMe()
@@ -12,7 +15,7 @@ export const Chats = () => {
   }
   return (
     <Segment title="Чаты">
-      <div>Чаты</div>
+      <div className={css.chats}></div>
     </Segment>
   )
 }

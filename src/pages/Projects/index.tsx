@@ -17,14 +17,14 @@ export const Projects = () => {
                 <h3 className={css.header}>{el.title}</h3>
                 <p className={css.description}>{el.description}</p>
                 {!!el.searchesFor && (
-                  <p className={css.inSearchOf}>
-                    В поисках:
+                  <div className={css.inSearchOf}>
+                    <div className={css.searchText}>В поисках</div>
                     {translateResources(el.searchesFor).map((el) => (
-                      <p className={css.category} key={el}>
+                      <div className={css.category} key={el}>
                         {el}
-                      </p>
+                      </div>
                     ))}
-                  </p>
+                  </div>
                 )}
               </div>
             </Link>

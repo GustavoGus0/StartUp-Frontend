@@ -6,7 +6,7 @@ export function translateResources(
     specialists: 'Специалистов',
     investors: 'Инвесторов',
     'rooms and lands': 'Помещения и Территории',
-    equipment: 'оборудования',
+    equipment: 'Оборудования',
   }
 
   return categories.map((category) => translationMap[category] || fallback)

@@ -1,4 +1,4 @@
-import { IProject } from '../types'
+import { IChat, IProject } from '../types'
 
 export const projects_data: IProject[] = [
   {
@@ -26,5 +26,13 @@ export const projects_data: IProject[] = [
     images: null,
     isMy: false,
     searchesFor: ['investors'],
+  },
+]
+
+export const chats_data: IChat = [
+  {
+    id: 0,
+    user1Id: 'hwk83h_nm',
+    user2Id: '55te_bwa32',
   },
 ]
