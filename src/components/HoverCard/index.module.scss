@@ -1,0 +1,29 @@
+.hoverBox {
+  background-color: rgb(60 60 60);
+  height: max(8rem, max-content);
+  width: 8rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  translate: calc(100% + 1rem) 0;
+  font-family: Poppins, sans-serif;
+  color: rgb(40 40 40);
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    height: 100%;
+
+    ul {
+      font-size: 3px;
+    }
+  }
+
+  li {
+    list-style-type: none;
+  }
+}

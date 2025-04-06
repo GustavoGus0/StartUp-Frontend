@@ -4,16 +4,21 @@ import { useEffect } from 'react'
 import { Link, Outlet, useLocation } from 'react-router'
 
 import { useOnceAnimation } from '../../hooks/useOnceAnimation'
+import { useShow } from '../../hooks/useShow'
 import { animateSlideDown, animateSlideToRight } from '../../lib/animations'
 import { useMe } from '../../lib/ctx'
 import { links } from '../../lib/links'
 import { ILink } from '../../lib/links'
 import { IStartuper } from '../../types'
 import { ScaleOut } from '../Animation'
+import { HoverCard } from '../HoverCard'
 
 import css from './index.module.scss'
 
 export const Layout = () => {
+  const { isShow, showElement, hideElement } = useShow({
+    delay: 300,
+  })
   const { initial, animate } = animateSlideToRight()
   const { needAnimation, setElementAnimated, handleReloadPage, removeListener } =
     useOnceAnimation('header-animated')
@@ -28,7 +33,15 @@ export const Layout = () => {
 
   return (
     <div className={css.mainContainer}>
-      <header className={css.header}>
+      <header
+        className={css.header}
+        onMouseEnter={() => showElement}
+        onMouseLeave={() => hideElement}
+      >
+        <HoverCard animationType="scale-in" show={isShow}>
+          Extra info
+          {/* TODO: ADD SOME INFO ABOUT THE SERVICE AND STYLE CARD TO SHOW PROPERLY  */}
+        </HoverCard>
         <motion.h1
           initial={needAnimation ? initial : {}}
           animate={animate}

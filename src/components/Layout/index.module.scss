@@ -14,8 +14,9 @@
     min-width: $menuHeaderWidth;
     max-width: $menuHeaderMaxWidth;
     text-wrap: nowrap;
+    position: relative;
 
-    .headerText {
+    .headertext {
       font-size: $mainHeaderFontSize;
       font-weight: $mainHeaderFontWeight;
     }

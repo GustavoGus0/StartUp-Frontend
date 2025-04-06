@@ -1,0 +1,57 @@
+@use '../../styles/vars' as *;
+@use '../../styles/mixins' as *;
+
+.chats {
+  padding: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  cursor: pointer;
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+
+    .listItem {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      transition: 0.1s ease-in-out;
+
+      .textContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .fullName {
+          font-size: 1.15rem;
+        }
+
+        .role {
+          background-color: $accentColor;
+          color: $whiteText;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.25rem 0.6rem;
+          border-radius: 0.5rem;
+          font-size: 0.8rem;
+        }
+      }
+
+      .content {
+        margin-top: 0.5rem;
+      }
+
+      &:hover {
+        background-color: $linkHoverBackgroundColorLT;
+        scale: 1.03;
+      }
+
+      &:active {
+        scale: 0.98;
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ export interface IProject {
 export interface IChat {
   id: string | number
   user1Id: string | number
-  user2Id: string | number
+  user2: IUser
 }
 
 export type roleType = 'startuper' | 'specialist' | 'investor'
@@ -24,7 +24,8 @@ export interface IUser {
   name: string
   surname: string
   patronymic: string
-  description: string
+  description: string | null
+  lastMessage: string | undefined
 }
 
 export interface IStartuper extends IUser {

@@ -38,7 +38,7 @@ const Preview = ({
   photo?: React.JSX.Element | string
   role: string
   title: string
-  description: string
+  description?: string | null
   children?: React.ReactNode
 }) => {
   return (
