@@ -1,0 +1,48 @@
+@use '../../../styles/vars' as *;
+@use '../../../styles/mixins' as *;
+
+.form {
+  padding: $authBarPadding;
+  border-radius: $authBarBorderRadius;
+  background-color: $authBackgroundColorLT;
+  color: $authTextColorLT;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .inputContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    .inputColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    height: max-content;
+    gap: 1rem;
+
+    .button {
+      flex: 2 0 auto;
+    }
+
+    .linkButton {
+      flex: 1 0 3rem;
+      @include linkButton;
+
+      .reactLink {
+        @include reactLink;
+      }
+    }
+  }
+
+  .button {
+    @include authButton;
+  }
+}

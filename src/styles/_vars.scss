@@ -9,7 +9,7 @@ $menuToMainContentGap: 2rem;
 $marginFromTopOfPage: 4rem;
 
 // IS USED TO DISPLAY SUCCESS
-$greenText: #2b6d2b;
+$greenTextColor: #2b6d2b;
 $greenBackground: #d7ffd7;
 
 // IS USED TO DISPLAY FAILURE
@@ -52,3 +52,16 @@ $backButtonSize: 2.5em;
 
 // ICONS
 $iconsLightGrayLT: rgb(180 180 180);
+
+// AUTHORIZATION
+$authBarPadding: 1rem;
+$authBarBorderRadius: 1rem;
+$authBackgroundColorLT: rgb(240 240 240);
+$authTextColorLT: rgb(0 0 0);
+$authLabelFontSize: 0.9rem;
+$authInputFontSize: 1.1rem;
+$authButtonBackgroundColorLT: rgb(255 255 255);
+$authButtonHoverBackgroundColorLT: rgb(240 240 240);
+
+// ALERT COMPONENT
+$alertFontSize: 0.8rem;

@@ -11,3 +11,55 @@
     scale: $scaleValue;
   }
 }
+
+@mixin authButton {
+  border: 1px solid $greenTextColor;
+  color: $greenTextColor;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    scale: 1.03;
+    background-color: $greenBackground;
+  }
+
+  &:active {
+    scale: 0.98;
+  }
+}
+
+@mixin authInput {
+  border: none;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.35rem;
+  font-size: $authInputFontSize;
+}
+
+@mixin reactLink($border: 1px solid $accentColor) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $accentColor;
+  border: $border;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+    background-color: $accentColorLight;
+    scale: 1.05;
+  }
+}
+
+@mixin linkButton {
+  transition: 0.1s ease-in-out;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    scale: 1.05;
+  }
+}

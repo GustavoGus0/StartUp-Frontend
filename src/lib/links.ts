@@ -71,14 +71,14 @@ export const links: ILink[] = [
   {
     to: getSignInRoute(),
     textInLink: 'Вход',
-    icon: null,
+    icon: icons.signIn(),
     forAuth: false,
     canSeeNotAuth: true,
   },
   {
     to: getSignUpRoute(),
     textInLink: 'Регистрация',
-    icon: null,
+    icon: icons.signUp(),
     forAuth: false,
     canSeeNotAuth: true,
   },

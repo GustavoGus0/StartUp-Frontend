@@ -1,0 +1,57 @@
+@use '../../../styles/vars' as *;
+@use '../../../styles/mixins' as *;
+
+.form {
+  padding: $authBarPadding;
+  border-radius: $authBarBorderRadius;
+  background-color: $authBackgroundColorLT;
+  color: $authTextColorLT;
+  display: flex;
+  flex-direction: column;
+
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+
+    .passwordEye {
+      position: relative;
+    }
+
+    .label {
+      font-size: $authLabelFontSize;
+    }
+
+    .emailInput {
+      @include authInput;
+    }
+
+    .passwordInput {
+      @include authInput;
+    }
+
+    .eye {
+      width: 1.5rem;
+      border: none;
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      transform: translateY(-44%);
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  .button {
+    @include authButton;
+  }
+
+  .linkButton {
+    @include linkButton;
+
+    .reactLink {
+      @include reactLink;
+      margin-top: 1rem;
+    }
+  }
+}

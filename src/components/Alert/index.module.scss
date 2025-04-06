@@ -1,0 +1,23 @@
+@use '../../styles/vars' as *;
+
+.alert {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: $alertFontSize;
+  color: $textColorLT;
+}
+
+.color-red {
+  background-color: $redBackground;
+  color: $redTextColor;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.color-green {
+  background-color: $greenBackground;
+  color: $greenTextColor;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}

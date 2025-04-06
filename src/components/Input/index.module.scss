@@ -1,0 +1,34 @@
+@use '../../styles/vars' as *;
+@use '../../styles/mixins' as *;
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+
+  .label {
+    font-size: $authLabelFontSize;
+  }
+
+  .inputWithEye {
+    position: relative;
+
+    .input {
+      @include authInput;
+    }
+
+    .eye {
+      width: 1.5rem;
+      border: none;
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      transform: translateY(-42%);
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  .passwordInput {
+    @include authInput;
+  }
+}
